@@ -604,7 +604,7 @@ nav p + p {
     }
     header {
         padding: 3rem; /* Equivalent to lg:p-10 */
-        width: 100%;
+       
     }
     nav p + p {
         margin-left: 2rem; /* Set horizontal gap between links */
@@ -810,6 +810,13 @@ nav p + p {
     .imgse2 {
         display: none; /* Display as flex */
         
+    }
+
+    .wrapp {
+        display: flex; 
+        flex-direction: row;
+        align-items: center; 
+        gap: 2rem; /* Spacing between items */
     }
 
     .dmobile {

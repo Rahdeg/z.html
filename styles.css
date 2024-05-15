@@ -131,7 +131,7 @@ nav p + p {
     height: 2.5rem; 
     border-radius: 0.375rem; /* Equivalent to rounded-md */
     border: 1px solid var( --very-dark-blue); 
-    background-color: var(--light-grayish-blue); /* Equivalent to bg-background */
+    background-color: white; /* Equivalent to bg-background */
     padding-left: 0.75rem; /* Equivalent to px-3 */
     padding-right: 0.75rem; /* Equivalent to px-3 */
     padding-top: 0.5rem; /* Equivalent to py-2 */

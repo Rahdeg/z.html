@@ -1,0 +1,715 @@
+
+:root {
+    /* Primary Colors */
+    --very-dark-blue: hsl(243, 87%, 12%);
+    --desaturated-blue: hsl(238, 22%, 44%);
+
+    /* Accent Colors */
+    --bright-blue: hsl(224, 93%, 58%);
+    --moderate-cyan: hsl(170, 45%, 43%);
+
+    /* Neutral Colors */
+    --light-grayish-blue: hsl(240, 75%, 98%);
+    --light-gray: hsl(0, 0%, 75%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400&display=swap');
+
+
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    
+}
+
+h1, h2, h3, h4, h5, h6,
+.call-to-action,
+.header-navigation {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700; 
+}
+
+h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
+p {
+    font-size: 16px;
+   
+}
+
+
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.25rem; 
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--desaturated-blue);
+    font-size: smaller;
+}
+
+nav p + p {
+    margin-left: 0.75rem; 
+}
+
+.sectone {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: 1.25rem; 
+    padding-top: 3rem;
+    padding-bottom: 5rem;
+    padding-left: 1.25rem; 
+    padding-right: 1.25rem; 
+
+}
+
+.large {
+    display: none; 
+}
+
+.imageone {
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    display: none;
+}
+
+.imagetwo {
+    width: 100%; 
+    height: 100%; 
+    position: relative; 
+    display: flex;
+    align-items: flex-start; 
+    justify-content: center;
+}
+
+.mobileone {
+    display: flex; 
+    flex-direction: column; 
+    gap: 1.25rem; 
+    align-items: center; 
+    justify-content: center; 
+}
+
+.largep {
+    font-size: 2.5rem; 
+    font-weight: 700; 
+    color: var(--very-dark-blue)
+}
+
+.smallp {
+    font-size: 1rem; 
+    color: var(--slate-500); 
+    color: var(--desaturated-blue)
+}
+
+.wrapp {
+    display: flex; 
+    align-items: center; 
+    gap: 2rem; /* Spacing between items */
+}
+
+
+.inputs {
+    display: flex; 
+    height: 2.5rem; 
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    border: 1px solid var( --very-dark-blue); 
+    background-color: var(--light-grayish-blue); /* Equivalent to bg-background */
+    padding-left: 0.75rem; /* Equivalent to px-3 */
+    padding-right: 0.75rem; /* Equivalent to px-3 */
+    padding-top: 0.5rem; /* Equivalent to py-2 */
+    padding-bottom: 0.5rem; /* Equivalent to py-2 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    width: 25rem; /* Equivalent to w-96 */
+}
+
+.btnone {
+    display: inline-flex; /* Display as inline-flex */
+    align-items: center; 
+    justify-content: center; 
+    white-space: nowrap; /* Prevent wrapping */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    height: 2.75rem; /* Equivalent to h-11 */
+    border-radius: 0.300rem; /* Equivalent to rounded-md */
+    padding-left: 2rem; /* Equivalent to px-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
+    background-color: var(--bright-blue); /* Equivalent to bg-blue-600 */
+    border: none;
+    color: var(--light-grayish-blue);
+}
+
+.smp {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; /* Align items horizontally */
+    gap: 1rem; 
+    width: 100%; 
+}
+
+.section2 {
+    background-image: url('./images/bg-curve-mobile.svg'); /* Background image for mobile */
+    background-repeat: no-repeat; /* No repeating background */
+    background-size: auto; /* Auto background size */
+    width: 100%; 
+    height: 100%; 
+}
+
+.main2 {
+    display: grid; /* Display as grid */
+    grid-template-columns: 1fr; /* 1 column by default */
+    gap: 1.25rem; /* Gap between grid items */
+    margin-top: 2rem; /* Equivalent to mt-8 */
+    padding-top: 5.0rem; /* Equivalent to py-10 */
+    padding-bottom: 2.5rem; /* Equivalent to py-10 */
+    background-color: #F8F8FE; /* Background color */
+    padding-left: 0.8rem; 
+    padding-right: 0.8rem; 
+}
+.wrap2 {
+    display: none; 
+}
+
+.txt1 {
+    font-size: 1.875rem; /* Equivalent to text-3xl */
+    font-weight: 600; 
+    color: var(--very-dark-blue)
+    
+}
+
+.txt2 {
+    font-size: 1rem; 
+    color: var(--desaturated-blue)
+}
+
+.divone {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    gap: 0.5rem; 
+    margin-top: 0.75rem; /* Equivalent to my-3 */
+    margin-bottom: 0.75rem; /* Equivalent to my-3 */
+}
+
+.pone {
+    display: flex; 
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: var( --moderate-cyan); /* Set text color to green-500 */
+    align-items: center; 
+    justify-content: center; 
+    gap: 0.5rem;
+}
+
+.rone {
+    border-radius: 0.5rem; /* Equivalent to rounded-lg */
+    border: 1px solid white; /* Add border */
+    background-color: white; /* Set background color to card */
+    color: var(--desaturated-blue); /* Set text color to card-foreground */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Add shadow */
+    margin-right: 15rem; /* Equivalent to mr-80 */
+   
+}
+
+.rm1 {
+    padding: 1.5rem; /* Equivalent to p-6 */
+    padding-top: 0; /* Equivalent to pt-0 */
+    margin-top: 1rem; /* Equivalent to mt-4 */
+}
+
+.rtwo {
+    padding: 1.5rem; /* Equivalent to p-6 */
+    padding-top: 0; /* Equivalent to pt-0 */
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically */
+    justify-content: start; /* Justify content to the start */
+    gap: 0.5rem; /* Gap between items */
+}
+
+.two {
+    position: relative; /* Set position to relative */
+    border-radius: 50%; /* Set border-radius to make it rounded */
+    width: 2.5rem; /* Set width to size-10 */
+    height: 2.5rem; /* Set height to size-10 */
+}
+
+.cnt {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: center; /* Center justify content */
+    gap: 0rem;
+}
+
+.pt {
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+}
+
+.pt2 {
+    color: var(--slate-500); /* Set text color to Slate 500 */
+    font-size: 0.75rem; /* Equivalent to text-xs */
+}
+
+.imgse {
+    display: none;
+}
+
+.dmobile {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    gap: 1.25rem; /* Gap between items */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center justify content */
+}
+
+
+.dm1 {
+    font-size: 1.0rem; /* Equivalent to text-lg */
+    font-weight: 600; /* Equivalent to font-semibold */
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically */
+    margin-top: 1.25rem; /* Equivalent to mt-5 */
+    color: var(--very-dark-blue)
+}
+
+.dmm2 {
+    font-size: 1rem; /* Equivalent to text-base */
+    color: var(--desaturated-blue); /* Set text color to Slate 500 */
+    text-align: center; /* Center align text */
+}
+.av {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center justify content */
+   
+    margin-top: 0.05rem; /* Equivalent to my-3 */
+}
+
+.pav {
+    display: flex; /* Display as flex */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: var( --moderate-cyan); /* Set text color to Green 500 */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center justify content */
+    gap: 0.5rem;
+}
+
+.sh {
+    flex-shrink: 0; /* Prevent flex item from shrinking */
+    width: 100%; /* Set width to full */
+    background-color: var( --moderate-cyan); /* Set background color to Green 700 */
+    height: 0.1rem; /* Set height to 0.5rem */
+}
+.avatar {
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically */
+    justify-content: center; /* Center justify content */
+    padding: 20px;
+}
+
+.ravat {
+    border-radius: 0.375rem; /* Equivalent to rounded-lg */
+    border: 1px solid white; /* Set border with card color */
+    background-color: white; /* Set background color with card color */
+    color: var(--desaturated-blue); /* Set text color with text-card-foreground color */
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05); /* Set box shadow with shadow-sm */
+}
+
+
+.rpii {
+    padding: 1.5rem; /* Equivalent to p-6 */
+    padding-top: 0; /* Equivalent to pt-0 */
+    margin-top: 1rem; /* Equivalent to mt-4 */
+}
+
+.pu {
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    color: var(--slate-500); /* Set text color to Slate 500 */
+}
+
+.avd {
+    padding: 1.5rem; /* Equivalent to p-6 */
+    padding-top: 0; /* Equivalent to pt-0 */
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically */
+    justify-content: flex-start; /* Justify content to the start */
+    gap: 0.5rem; /* Gap between items */
+}
+.rnd {
+    position: relative; /* Set position to relative */
+    border-radius: 50%; /* Set border-radius to make it rounded */
+    width: 2.5rem; /* Equivalent to size-10 */
+    height: 2.5rem; /* Equivalent to size-10 */
+}
+
+.pd1 {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: center; /* Center justify content */
+}
+
+
+.pd2 {
+    font-weight: bold; /* Set font weight to bold */
+    font-size: 0.5rem; /* Equivalent to text-sm */
+    color: var(--very-dark-blue); 
+}
+
+.pd3 {
+    color: var(--desaturated-blue); /* Set text color to Slate 500 */
+    font-size: 0.5rem; /* Equivalent to text-xs */
+}
+
+.imgse2{
+    display: flex;
+    align-items: center; /* Align items to the start */
+    justify-content: center; /* Center justify content */
+}
+
+
+
+.section3 {
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically to the center */
+    justify-content: center; /* Center justify content */
+    background-color:var(--desaturated-blue); /* Set background color to #575988 */
+    padding: 1.25rem; /* Equivalent to p-5 */
+}
+
+.div3 {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: center; /* Align items vertically to the center */
+    justify-content: center; /* Center justify content */
+    width: 100%; /* Set width to full */
+}
+
+.c3 {
+    width: 100%; /* Set width to full */
+    display: flex; /* Display as flex */
+}
+
+.d3 {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: center; /* Align items to the center */
+    justify-content: center; /* Center justify content */
+    padding: 2.5rem 2rem; /* Equivalent to py-10 px-8 */
+    
+}
+
+.g3 {
+    color: white; /* Set text color to white */
+    font-size: 1.5rem; /* Equivalent to text-2xl */
+    font-weight: bold; /* Set font weight to bold */
+}
+
+.t3 {
+    color: white; /* Set text color to white */
+    font-size: 0.75rem; /* Equivalent to text-xs */
+    text-align: center; /* Center align text */
+}
+
+.n {
+    width: 100%; /* Set width to full */
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically to the center */
+    justify-content: center; /* Center justify content */
+}
+
+.w3 {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: flex-start; /* Align items to the start */
+    width: 100%; /* Set width to full */
+    gap: 1rem; /* Gap between items */
+    padding-left: 4rem; /* Equivalent to px-16 */
+    padding-right: 4rem; /* Equivalent to px-16 */
+}
+
+
+.f3 {
+    display: flex; /* Display as flex */
+    height: 2.5rem; /* Equivalent to h-10 */
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    border: 1px solid var(--input); /* Set border with input color */
+    background-color: var(--light-grayish-blue); /* Set background color with background color */
+    padding-left: 0.75rem; /* Equivalent to px-3 */
+    padding-right: 0.75rem; /* Equivalent to px-3 */
+    padding-top: 0.5rem; /* Equivalent to py-2 */
+    padding-bottom: 0.5rem; /* Equivalent to py-2 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    width: 100%; /* Set width to full */
+}
+
+.b3 {
+    display: inline-flex; /* Display as inline-flex */
+    align-items: center; /* Align items vertically to the center */
+    justify-content: center; /* Center justify content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    color: var( --light-grayish-blue); /* Set text color to primary-foreground */
+    height: 2.75rem; /* Equivalent to h-11 */
+    border: none;
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    padding-left: 2rem; /* Equivalent to px-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
+    background-color: var(--bright-blue); /* Equivalent to bg-blue-600 */
+    width: 100%; /* Set width to full */
+}
+
+.bm3 {
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically to the center */
+    justify-content: center; /* Center justify content */
+    white-space: nowrap; /* Prevent text from wrapping */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    font-weight: 500; /* Equivalent to font-medium */
+    color: var( --light-grayish-blue); /* Set text color to primary-foreground */
+    height: 2.75rem; /* Equivalent to h-11 */
+    border: none;
+    border-radius: 0.375rem; /* Equivalent to rounded-md */
+    padding-left: 2rem; /* Equivalent to px-8 */
+    padding-right: 2rem; /* Equivalent to px-8 */
+    background-color: var(--bright-blue); /* Equivalent to bg-blue-600 */
+}
+
+
+.s4 {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: stretch; /* Stretch items along the cross axis */
+    justify-content: flex-start; /* Justify content to the start */
+    background-color: #06043B; /* Set background color to #06043B */
+    padding: 1.25rem; /* Equivalent to p-5 */
+}
+
+
+.d4 {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: center; /* Center justify content */
+    color: white; /* Set text color to white */
+    gap: 1rem; /* Gap between items */
+}
+
+.f4 {
+    display: flex; /* Display as flex */
+}
+
+.l4 {
+    display: none; /* Hide the element by default */
+}
+
+.hun {
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically to the center */
+    justify-content: center; /* Center justify content */
+    gap: 1rem; /* Gap between items (equivalent to gap-x-4) */
+}
+
+.hun2 {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: flex-start; /* Align items to the start */
+    justify-content: flex-start; /* Justify content to the start */
+    color: white; /* Set text color to white */
+    margin-top: 3.5rem; /* Equivalent to mt-14 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+    gap: 1rem; /* Gap between items (equivalent to gap-y-4) */
+}
+
+.j4 {
+    display: flex; /* Display as flex */
+    flex-direction: column; /* Flex direction column */
+    align-items: center; /* Align items to the center */
+    justify-content: center; /* Center justify content */
+    color: white; /* Set text color to white */
+    margin-top: 3.5rem; /* Equivalent to mt-14 */
+    font-size: 0.875rem; /* Equivalent to text-sm */
+}
+
+.jj4 {
+    display: flex; /* Display as flex */
+    align-items: center; /* Align items vertically to the center */
+    justify-content: center; /* Center justify content */
+    gap: 0.75rem; /* Gap between items (equivalent to gap-x-3) */
+}
+
+
+/* Media query for mobile devices */
+@media (max-width: 450px) {
+    /* Adjust styles for mobile devices */
+    /* Example: */
+    body {
+        font-size: 14px; /* Adjust font size for better readability on smaller screens */
+    }
+    .largep {
+        text-align: center;
+        font-size: 1.8rem;
+    }
+    
+    .smallp {
+        text-align: center;
+        font-size: 0.95rem;
+    }
+    .btnone {
+       width: 100%;
+    }
+
+    .inputs {
+        width: 100%;
+    }
+    .bm3 {
+        display: none; /* Hide the element */
+    }
+ 
+}
+
+/* Media query for desktop devices */
+@media (min-width: 1440px) {
+    /* Adjust styles for desktop devices */
+    /* Example: */
+    body {
+        max-width: 1440px; /* Limit the maximum width of content for better readability on large screens */
+        margin: 0 auto; /* Center the content horizontally */
+    }
+    header {
+        padding: 3rem; /* Equivalent to lg:p-10 */
+    }
+    nav p + p {
+        margin-left: 2rem; /* Set horizontal gap between links */
+    }
+    .imageone {
+        width: 100%; 
+        height: 100%; 
+        position: relative; 
+        display: block;
+    }
+    .sectone {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* Equivalent to lg:grid-cols-2 */
+        padding-left: 2.5rem; /* Equivalent to lg:p-10 */
+        padding-right: 2.5rem; /* Equivalent to lg:p-10 */
+    }
+    .large {
+        display: flex; /* Display as flex on large screens */
+        flex-direction: column; 
+        gap: 1.25rem; 
+        align-items: flex-start; 
+        justify-content: center; 
+        padding-right: 20px;
+    }
+    .mobileone {
+        display: none; /* Hide on large screens */
+    }
+    .imagetwo{
+        display: none; /* Hide on large screens */
+    }
+
+    .section2 {
+        background-image: url('./images/bg-curve-desktop.svg'); /* Background image for desktop */
+       
+    }
+    .main2 {
+        grid-template-columns: repeat(2, minmax(0, 1fr)); /* 2 columns on large screens */
+        gap: 2.5rem; /* Larger gap between grid items */
+        padding-left: 3.5rem; /* Equivalent to lg:p-10 */
+        padding-right: 3.5rem; /* Equivalent to lg:p-10 */
+    }
+    .wrap2 {
+        display: flex; /* Display as flex on large screens */
+        flex-direction: column; 
+        gap: 1.25rem; 
+        align-items: flex-start; 
+    }
+    .imgse {
+        display: flex; /* Display as flex */
+        align-items: center; /* Align items vertically */
+        justify-content: center; /* Center justify content */
+    }
+    .imgse2 {
+        display: none; /* Display as flex */
+        
+    }
+
+    .dmobile {
+        display: none; /* Hide on large screens */
+    }
+    .section3 {
+        padding: 2.5rem; /* Equivalent to lg:p-10 */
+    }
+
+    .div3 {
+        flex-direction: row; /* Flex direction row on large screens */
+    }
+    .c3 {
+        align-items: center; /* Align items vertically to the center on large screens */
+        justify-content: center; /* Center justify content on large screens */
+    }
+.d3{
+    align-items: flex-start; /* Align items to the start on large screens */
+    justify-content: flex-start; /* Justify content to the start on large screens */
+    padding-left: 0; /* Equivalent to lg:px-0 */
+    padding-right: 16rem; /* Equivalent to lg:pr-64 */
+}
+.t3{
+    text-align: start; /* Align text to the start on large screens */
+}
+
+.w3 {
+    padding-left: 0; /* Remove left padding on large screens */
+    padding-right: 0; /* Remove right padding on large screens */
+}
+
+.b3 {
+    display: none; /* Hide the element */
+}
+
+.s4{
+    flex-direction: row; /* Flex direction row on large screens */
+    gap: 13rem; /* Equivalent to lg:gap-x-52 */
+    padding: 2.5rem; /* Equivalent to lg:p-10 */
+    padding-top: 0px;
+}
+
+.l4 {
+    display: flex; /* Display as flex on large screens */
+}
+
+.m4 {
+    display: none; /* Hide the element on large screens */
+}
+
+.hun2 {
+    margin-top: 12rem; /* Equivalent to lg:mt-28 */
+}
+
+.j4 {
+    align-items: flex-start; /* Align items to the start on large screens */
+    justify-content: flex-start; /* Justify content to the start on large screens */
+    margin-top: 13rem; /* Equivalent to lg:mt-28 */
+}
+
+}
